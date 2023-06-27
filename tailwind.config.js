@@ -24,10 +24,11 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
+        // about: "url('./assets/about.png')",
+        about: "url('https://i.ibb.co/7tpHvjS/139948230-1067540537066729-3548417056344092155-n.jpg')",
         services: "url('./assets/services.png')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
