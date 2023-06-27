@@ -17,7 +17,7 @@ const Services = () => {
           className='flex-1 text-center'>
           <h2 className='h2 text-accent'>Skills</h2>
           <h3 className='h3 mb-4'>I'm Continues Learning New Technology and Exploring New Language</h3>
-          <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia quos unde dignissimos aliquid quo saepe natus quod ad maiores.</p>
+          <p className='mb-6'>MERN stack expertise. Robust API development. Responsive interface design. Up-to-date with industry trends. Collaborative team player. Let's build engaging web experiences.</p>
           {/* state */}
 
 

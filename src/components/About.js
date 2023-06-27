@@ -32,7 +32,7 @@ const About = () => {
          className='flex-1'>
           <h2 className='h2 text-accent'>About me.</h2>
           <h3 className='h3 mb-4'>I'm a MERN Stack Developer with Solid JavaScript Knowledge</h3>
-          <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia quos unde dignissimos aliquid quo saepe natus quod ad maiores.</p>
+          <p className='mb-6'>Passionate MERN stack developer creating innovative web experiences. Skilled in MongoDB, Express.js, React, and Node.js. Committed to clean code and continuous learning.</p>
           {/* state */}
           <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
             <div>

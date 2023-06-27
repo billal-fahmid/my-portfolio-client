@@ -51,7 +51,7 @@ const Banner = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
-            className='mb-8 max-w-lg mx-auto lg:mx-0'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, ea deleniti! Pariatur, libero eos perspiciatis laboriosam aliquam ipsum provident quaerat odit. </motion.p>
+            className='mb-8 max-w-lg mx-auto lg:mx-0'>MERN stack developer crafting impactful web applications with MongoDB, Express.js, React, and Node.js. Let's shape the web together </motion.p>
 
           <motion.div
             variants={fadeIn('up', 0.6)}
