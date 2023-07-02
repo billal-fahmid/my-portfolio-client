@@ -1,14 +1,16 @@
 import React from 'react';
 
-import Image from '../assets/avatar.svg'
+// import Image from '../assets/avatar.svg'
+import Image from '../assets/self.jpg'
 
-import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 import { TypeAnimation } from 'react-type-animation'
 
 import { motion } from 'framer-motion'
 
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -59,8 +61,8 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-            <a href='https://drive.google.com/file/d/1Ml202oRvJKEVH-nXahM5epp2a9ngaAvy/view?usp=sharing' target='_blank' className='btn btn-lg'>Resume</a>
-            <a href="#" className='text-gradient btn-link'>Contact me</a>
+            <a href='billal_hossen_developer.pdf' download='Resume'  className='btn btn-lg'>Resume</a>
+            <Link to='contact' href="#" className='text-gradient btn-link'>Contact me</Link >
           </motion.div>
           {/* social */}
           <motion.div
@@ -69,14 +71,14 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7 }}
             className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href="#">
+            <a href="https://github.com/billal-fahmid">
               <FaGithub></FaGithub>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/billal-hossen-a838a925b/">
               <FaLinkedin></FaLinkedin>
             </a>
-            <a href="#">
-              <FaYoutube></FaYoutube>
+            <a href="https://www.facebook.com/fahmidhasansohag.395/">
+              <FaFacebook></FaFacebook>
             </a>
           </motion.div>
 
@@ -88,7 +90,8 @@ const Banner = () => {
           whileInView={'show'}
          
           className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[400px] '>
-          <img src={Image} alt="" />
+          {/* <img src={Image} alt="" /> */}
+          <img className='mix-blend-lighten rounded-full' src={Image} alt="" />
         </motion.div>
       </div>
     </div>

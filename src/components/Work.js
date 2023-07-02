@@ -6,6 +6,44 @@ import img1 from '../assets/chef-hunter-assignment-10.web.app_.png'
 import img2 from '../assets/toy-market-place-assignment-11.web.app_ (1).png'
 import img3 from '../assets/assignment-12-fas-sports.web.app_ (3).png'
 
+import sli1p1 from '../assets/project1/Screenshot_414.png'
+import sli2p1 from '../assets/project1/Screenshot_415.png'
+import sli3p1 from '../assets/project1/Screenshot_416.png'
+import sli4p1 from '../assets/project1/Screenshot_417.png'
+import sli5p1 from '../assets/project1/Screenshot_418.png'
+
+import sli1p2 from '../assets/project2/Screenshot_414.png'
+import sli2p2 from '../assets/project2/Screenshot_415.png'
+import sli3p2 from '../assets/project2/Screenshot_416.png'
+import sli4p2 from '../assets/project2/Screenshot_417.png'
+import sli5p2 from '../assets/project2/Screenshot_418.png'
+import sli6p2 from '../assets/project2/Screenshot_419.png'
+
+import sli1p3 from '../assets/project3/Screenshot_414.png'
+import sli2p3 from '../assets/project3/Screenshot_415.png'
+import sli3p3 from '../assets/project3/Screenshot_416.png'
+import sli4p3 from '../assets/project3/Screenshot_417.png'
+import sli5p3 from '../assets/project3/Screenshot_418.png'
+import sli6p3 from '../assets/project3/Screenshot_419.png'
+import sli7p3 from '../assets/project3/Screenshot_420.png'
+
+
+import { useRef, useState } from "react";
+
+// import Swiper core and required modules
+import { Navigation, Pagination, } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
+
+
+
+
 
 
 const Work = () => {
@@ -29,11 +67,11 @@ const Work = () => {
 
           <div >
             <motion.div
-            variants={fadeIn('right', 0.5)}
-            initial={'hidden'}
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }} 
-             className="card w-full glass">
+              variants={fadeIn('right', 0.5)}
+              initial={'hidden'}
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+              className="card w-full glass">
               <div className='overflow-auto h-60 rounded-lg'  ><img className='object-contain h-fit ' src={img1} alt="car!" /></div>
               <div className="card-body">
                 <h2 className="card-title">BD-Ranna$Foods</h2>
@@ -52,13 +90,36 @@ const Work = () => {
             {/* <button className="btn" >open modal</button> */}
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
               <form method="dialog" className="modal-box">
-                <h3 className="font-bold text-lg">Hello!</h3>
-                <p className="py-4">This is Popular Chefs And Foods web site.
-                  This is a single page web site
-                  Use this Site you can Choose Chef And Food.
-                  You see the many Chefs and every single Chef details .
-                  You can see the Chefs Recipes , Chefs Like , Chefs Experience and Number Of Recipes.
-                  You Also Create your Account And then Login this site .</p>
+                <h3 className="font-bold text-lg">BD-Ranna$Foods</h3>
+                <div>
+                  <>
+                    <Swiper
+                      pagination={{
+                        type: "progressbar",
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide className='w-full h-full'><img className='' src={sli1p1} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full h-full'><img src={sli2p1} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full h-full'><img src={sli3p1} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full h-full'><img src={sli4p1} alt="" /></SwiperSlide>
+
+                    </Swiper>
+                  </>
+
+                </div>
+                <h2 className='font-semibold'>This is Popular Chefs And Foods web site.</h2>
+                <ul className="text-[14px]">
+                  <li> This is a single page web site</li>
+                  <li> Use this Site you can Choose Chef And Food.</li>
+                  <li>You see the many Chefs and every single Chef details .</li>
+                  <li>You can see the Chefs Recipes , Chefs Like , Chefs Experience and Number Of Recipes.</li>
+                  <li>You Also Create your Account And then Login this site .</li>
+                </ul>
+                <h2 className='font-semibold'>Technology</h2>
+                <p>React , Tailwind , React-router, Firebase Authentication etc </p>
                 <div className="modal-action">
                   {/* if there is a button in form, it will close the modal */}
                   <button className="btn">Close</button>
@@ -69,11 +130,11 @@ const Work = () => {
 
           <div>
             <motion.div
-            variants={fadeIn('up', 0.5)}
-            initial={'hidden'}
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
-             className="card w-full glass">
+              variants={fadeIn('up', 0.5)}
+              initial={'hidden'}
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+              className="card w-full glass">
               <div className='overflow-auto h-60 rounded-lg'  ><img className='object-contain h-fit ' src={img2} alt="car!" /></div>
               <div className="card-body">
                 <h2 className="card-title">ABCD-TOYS</h2>
@@ -92,13 +153,38 @@ const Work = () => {
             {/* <button className="btn" >open modal</button> */}
             <dialog id="my_modal_6" className="modal modal-bottom sm:modal-middle">
               <form method="dialog" className="modal-box">
-                <h3 className="font-bold text-lg">Hello!</h3>
-                <p className="py-4">This is a Educational Toys shop web site.
-                  This is a single page web site .
-                  Use this Site you can Choose Toys and buy this site and if you can want you toys add this site after Register or login.
-                  You see the many Toys and toys details this site.
-                  You can see Our trending Toys , Customer review etc.
-                  You Also Create your Account And then Login this site .</p>
+                <h3 className="font-bold text-lg">ABCD-TOYS</h3>
+                <div>
+                  <>
+                    <Swiper
+                      pagination={{
+                        type: "progressbar",
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide className='w-full '><img src={sli1p2} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli2p2} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli3p2} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli4p2} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli5p2} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli6p2} alt="" /></SwiperSlide>
+
+                    </Swiper>
+                  </>
+
+                </div>
+                <h3>This is a Educational Toys shop web site.</h3>
+                <ul className="">
+                  <li>This is a single page web site .</li>
+                  <li>Use this Site you can Choose Toys and buy this site and if you can want you toys add this site after Register or login.</li>
+                  <li>You see the many Toys and toys details this site.</li>
+                  <li>You can see Our trending Toys , Customer review etc.</li>
+                  <li>You Also Create your Account And then Login this site .</li>
+                </ul>
+                <h2 className='font-semibold'>Technology</h2>
+                <p>React , Tailwind , React-router ,Express.js , Node.js , MongoDB , React Query, Firebase Authentication etc</p>
                 <div className="modal-action">
                   {/* if there is a button in form, it will close the modal */}
                   <button className="btn">Close</button>
@@ -109,13 +195,14 @@ const Work = () => {
 
           <div>
             <motion.div
-            variants={fadeIn('left', 0.5)}
-            initial={'hidden'}
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
-             className="card w-full glass">
+              variants={fadeIn('left', 0.5)}
+              initial={'hidden'}
+              whileInView={'show'}
+              viewport={{ once: false, amount: 0.3 }}
+              className="card w-full glass">
               <div className='overflow-auto h-60 rounded-lg'  ><img className='object-contain h-fit ' src={img3} alt="car!" /></div>
               <div className="card-body">
+
                 <h2 className="card-title">FSA-Sports</h2>
 
                 <div className='flex items-center justify-between'>
@@ -132,8 +219,36 @@ const Work = () => {
             {/* <button className="btn" >open modal</button> */}
             <dialog id="my_modal_7" className="modal modal-bottom sm:modal-middle">
               <form method="dialog" className="modal-box">
-                <h3 className="font-bold text-lg">Hello!</h3>
-                <p className="py-4">Press ESC key or click the button below to close</p>
+                <div>
+                  <>
+                    <Swiper
+                      pagination={{
+                        type: "progressbar",
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}
+                      className="mySwiper"
+                    >
+                      <SwiperSlide className='w-full '><img src={sli1p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli2p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli3p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli4p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli5p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli6p3} alt="" /></SwiperSlide>
+                      <SwiperSlide className='w-full '><img src={sli7p3} alt="" /></SwiperSlide>
+
+                    </Swiper>
+                  </>
+
+                </div>
+                <h3 className="font-bold text-lg">FSA-Sports</h3>
+                <p className="py-4"> In this project, I implement the CRUD operation of MongoDB. and especially this project one feature is the user can play three different roles on this site. roles like student, instructor, and also admin. and if the admin wants also can change a student role convert to an instructor or admin also.
+                  and other features are students can select multiple classes. and Also a student can a class select just one time. and all selected classes add to the selected class menu on her dashboard. and then he wants can a class delete from her selected class menu. otherwise, he/she can also pay to enroll in this class. when successful a payment then this class add to her enrolled classes page and also remove from her select classes menu. and students can also see her payment history.
+                  now I describe the instructor's role, an instructor creates her own class. he/she can see her total student and also her all classes and admin feedback and also can see Which class is approved by admin and which class is denied by admin.
+                  Now I will describe what an admin can do . as an admin manage all users, like changing her role and if the admin wants also can delete a user. and manage all classes added by all instructors. like admin approval, admin denied, and also send feedback to the instructor. this is the main feature of my project. and I also implement authentication by Firebase with an email password and Google login.
+                </p>
+                <h2 className='font-semibold'>Technology</h2>
+                <p>React , Tailwind , React-router ,Express.js , Node.js , MongoDB , Firebase, AOS, Axios , React Query , Authentication etc</p>
                 <div className="modal-action">
                   {/* if there is a button in form, it will close the modal */}
                   <button className="btn">Close</button>

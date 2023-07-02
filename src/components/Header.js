@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 // import logo from '../assets/logo.svg'
 
@@ -9,7 +10,7 @@ const Header = () => {
         <a href="#" className=''>
           <span className='text-3xl font-bold  uppercase text-gradient'>Billal  Hossen</span>
         </a>
-        <button className='btn btn-sm'>work with me</button>
+        <Link to='footer' className='btn btn-sm'>work with me</Link>
       </div>
     </div>
   </header>;
